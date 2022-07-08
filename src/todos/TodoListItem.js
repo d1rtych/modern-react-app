@@ -6,10 +6,10 @@ export const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
     <div className='buttons-container'>
       {todo.isCompleted
         ? null
-        : <button className='completed-button' onClick={() => onCompletedPressed(todo.text)}>Mark As Completed</button>}
+        : <button className='completed-button' onClick={() => onCompletedPressed(todo.id)}>Mark As Completed</button>}
       <button
         className='remove-button'
-        onClick={() => onRemovePressed(todo.text)}
+        onClick={() => onRemovePressed(todo.id)}
       >Remove</button>
     </div>
   </div>
