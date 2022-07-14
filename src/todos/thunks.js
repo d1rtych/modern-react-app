@@ -5,7 +5,7 @@ import {
   loadTodosSuccess,
   markTodoAsCompleted,
   removeTodo
-} from "./actions";
+} from './actions';
 
 export const loadTodos = () => async (dispatch) => {
   try {
